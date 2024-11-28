@@ -1,0 +1,194 @@
+<!--<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <form action="login" method="post">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="">
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="">
+        <button type="submit">Entrar</button>
+        <span>Realize seu cadastro </span>
+        <a href="cadastrar.html">Cadastre-se</a>
+    </form>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(160, 41, 184, 0.788);
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    padding: 50px;
+    height: 500px;
+
+
+
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(89, 23, 102, 0.788);
+    padding: 30px;
+    border-radius: 0 0 0 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 0 18px 0 0;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p1 {
+    font-family: 'Raleway 700';
+    font-size: 3.5rem;
+    color: white;
+}
+
+.p2 {
+    color: white;
+    font-size: 18.5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.helper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.i1 {
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid rgb(173, 169, 169);
+}
+
+button {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: rgb(70, 31, 89);
+    background: linear-gradient(90deg, rgba(70, 31, 89, 1) 0%, rgba(123, 25, 140, 1) 54%, rgba(92, 9, 121, 1) 100%);
+}
+
+button:hover {
+    background: rgb(49, 22, 63);
+    background: linear-gradient(90deg, rgb(48, 21, 61) 0%, rgb(101, 21, 116) 54%, rgb(75, 7, 100) 100%);
+    cursor: pointer;
+
+}
+
+.p3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.l1 {
+    color: rgba(89, 23, 102, 0.788);
+}
+
+.l2 {
+    color: rgba(89, 23, 102, 0.788);
+}
+input[type="checkbox"]{
+   transform: translate(10px,0);
+}
+    </style>-->
+    <link rel="stylesheet" href="http://localhost:3000/styleLogin.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="aside">
+                <div class="content-aside">
+                    <p class="p1">Bem vindo ao SGF!</p>
+                    <p class="p2">Você pode entrar usando uma conta cadastrada.</p>
+
+                </div>
+
+            </div>
+
+            <div class="form">
+
+                <h2>Fazer Login</h2>
+                <p id="mensagemErro" style="color: red;">
+                    <%= mensagemErro %>
+                </p>
+                <form action="fazer-login" method="post" id="login-form">
+                    <input type="email" name="email" id="email" placeholder="Email" class="i1" required>
+
+                    <input type="password" name="senha" id="senha" placeholder="Senha" class="i1" required>
+
+                    <!-- <div class="helper">
+                        <input type="checkbox" name="rmb">
+                        <label for="rmb">Remember-me</label>
+                      <a href="#" class="l2">Forgot password?</a>
+                    </div>-->
+                    <button type="submit">Entrar</button>
+                    <p class="p3">Novo aqui? <a href="cadastrar" class="l1">Crie uma conta</a></p>
+
+                    <!--" -->
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

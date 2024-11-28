@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/LisStyle.css">
+    <title>Lista de Usuários</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="aside">
+                <h1>Lista de Usuários</h1>
+                <ul>
+                    <% dados.forEach(function(dado) { %>
+                        <li>ID: <%= dado.id %> <br>
+                                Nome: <%= dado.name_user %> <br>
+                                    Email: <%= dado.email %> <br>
+                                        <button type="submit">
+                                            <a
+                                                href="editaruser?id=<%= dado.id %>&nome=<%= encodeURIComponent(dado.name_user) %>&email=<%= encodeURIComponent(dado.email) %>">Editar
+                                                Usuário</a>
+                                        </button>
+
+                        </li>
+                        <% }); %>
+                </ul>
+                <div class="btns">
+                    <button><a href="http://localhost:3000/login">Voltar para login</a></button>
+                    <button><a href="http://localhost:3000/home">Voltar para home</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

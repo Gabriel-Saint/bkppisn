@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/CadStyle.css">
+    <title>Login</title>
+    <style>
+        #btn {
+            margin-top: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*background-color: #00798c;*/
+            background-image: url("http://localhost:3000/bkg0.jpg");
+            height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+
+
+
+            <div class="form">
+                <h2>Realize seu cadastro</h2>
+                <p id="mensagemErro" style="color: red;">
+                    <%= mensagemErro %>
+                </p>
+                <p id="mensagem2"></p>
+                <form action="cadastro" method="post" id="form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="" required>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required>
+                    <label for="senha">Confirme a sua senha:</label>
+                    <input type="password" name="" id="senha2" required>
+                    <button type="submit" id="btn">Cadastrar</button>
+                        <div class="voltar">
+                            <a href="http:/">
+                                voltar para login
+                               </a>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="http://localhost:3000/scriptCad.js"></script>
+
+</html>

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,300&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.nav {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 5px;
+}
+
+.first {
+    margin-bottom: 10px;
+}
+
+body {
+    /* background-color: #00798c;*/
+    background-image: url("http://localhost:3000/bkg0.jpg");
+    height: 100vh;
+}
+
+.entradas {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #575A5E;
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.saidas {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #575A5E;
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.header {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+
+}
+
+.total {
+    font-weight: bold;
+    background-color: #575A5E;
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.container {
+    background-color: #a7b1bb;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.seta1 {
+    color: #E03514;
+}
+
+.seta3 {
+    color: #A3E12B;
+}
+
+.bi-trash3-fill {
+    color: #E04014;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.paginacao>nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    height: 30px;
+}
+
+.form-edit {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form1 {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form1>input {
+    height: 37.8px;
+    width: 280px;
+}
+
+.form1>select {
+    height: 37.8px;
+    width: 280px;
+}
+
+.form1>button {
+    min-height: 37.33px;
+    min-width: 280px;
+    margin-top: 5px;
+
+}
+
+.form1 input[type="date"] {
+    min-height: 37.5px;
+}
+
+.form2>button {
+
+    margin-top: -19px;
+    min-width: 280px;
+}
+
+.voltar {
+    margin-top: 4px;
+    min-height: 37.33px;
+    min-width: 280px;
+}
+
+.voltar>a {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-session {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}

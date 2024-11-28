@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(155, 177, 255);
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    padding: 50px;
+    height: 600px;
+
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(89, 23, 102, 0.788);
+    padding: 30px;
+    border-radius: 0 0 0 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 0 18px 0 18px;
+    -webkit-box-shadow: 4px 6px 16px 1px rgba(0, 0, 0, 0.88);
+    box-shadow: 4px 6px 16px 1px rgba(0, 0, 0, 0.88);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.p1 {
+    font-family: 'Raleway 700';
+    font-size: 3.5rem;
+    color: white;
+}
+
+.p2 {
+    color: white;
+    font-size: 18.5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.helper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.i1 {
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid rgb(173, 169, 169);
+}
+
+button {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: rgb(70, 31, 89);
+    background: linear-gradient(90deg, rgba(155, 177, 255) 0%, rgba(84, 101, 255) 54%, rgba(155, 177, 255) 100%);
+}
+
+button:hover {
+    background: rgb(49, 22, 63);
+    background: linear-gradient(90deg, rgb(91, 126, 255) 0%, rgb(55, 75, 255) 54%, rgb(91, 126, 255) 100%);
+    cursor: pointer;
+
+}
+
+.p3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.l1 {
+    color: rgba(89, 23, 102, 0.788);
+}
+
+.l2 {
+    color: rgba(89, 23, 102, 0.788);
+}
+
+input[type="checkbox"] {
+    transform: translate(10px, 0);
+}
+div.voltar{
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.voltar > a {
+    font-weight: 500;
+}
+
+div.voltar > a:hover {
+    text-decoration: underline;
+}
+form> input {
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    padding: 6px;
+    border: 1px solid rgb(173, 169, 169);
+}
